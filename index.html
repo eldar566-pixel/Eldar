@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Математический Атлас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body {
+        body, pre {
             background-color: #0d1117;
             color: #e6edf3;
-            font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'SF Mono', 'Consolas', 'Liberation Mono', monospace;
+            font-family: 'Fira Code', 'DejaVu Sans Mono', 'Consolas', monospace;
             font-size: 14px;
-            line-height: 1.4;
-            padding: 20px;
+            line-height: 1.45;
             font-variant-ligatures: none;
+            font-feature-settings: "liga" 0;
+            -webkit-font-feature-settings: "liga" 0;
+            letter-spacing: 0;
+        }
+        body {
+            padding: 20px;
         }
         pre {
             white-space: pre;
             overflow-x: auto;
             tab-size: 4;
-            font-family: inherit;
-            font-size: inherit;
-            line-height: inherit;
         }
-        .content {
-            max-width: 100%;
-        }
-        /* Для мобильных */
         @media (max-width: 768px) {
-            body {
+            body, pre {
                 font-size: 10px;
+            }
+            body {
                 padding: 8px;
             }
         }
-        /* Скроллбар */
         ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
@@ -51,18 +51,14 @@
             background: #30363d;
             border-radius: 5px;
         }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #484f58;
-        }
     </style>
 </head>
 <body>
-    <div class="content">
-        <pre>
+<pre>
 ═══════════════════════════════════════════════════════════════════════════════
                     МАТЕМАТИЧЕСКИЙ АТЛАС
 ═══════════════════════════════════════════════════════════════════════════════
-								 Эльдар Ахметов
+																 Эльдар Ахметов
 
    МАТЕМАТИКА — ЭТО ЯЗЫК ПРОСТРАНСТВ
 

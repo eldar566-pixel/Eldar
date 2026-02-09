@@ -2,40 +2,48 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200"> 
+    <meta name="viewport" content="width=1280">
     
     <title>Математический Атлас</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        body, pre {
-            background-color: #0d1117;
-            color: #e6edf3;
-            /* ИЗМЕНЕНИЕ 2: Более точный стек шрифтов для iOS и Android */
-            font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
-            font-size: 14px;
-            line-height: 1.4;
-            
-            /* ИЗМЕНЕНИЕ 3: Запрещаем браузеру менять размер текста автоматически */
-            -webkit-text-size-adjust: none;
-            -moz-text-size-adjust: none;
-            text-size-adjust: none;
-        }
 
         body {
+            background-color: #0d1117;
             padding: 20px;
-            /* Гарантируем, что фон не обрежется справа */
-            min-width: 1200px; 
+            /* Гарантируем ширину контейнера */
+            width: 1280px; 
+            min-width: 1280px;
         }
 
         pre {
-            /* Убеждаемся, что символы точно встают в сетку */
+            background-color: #0d1117;
+            color: #e6edf3;
+            
+            /* САМОЕ ВАЖНОЕ: Используем загруженный шрифт */
+            font-family: 'JetBrains Mono', 'Menlo', 'Consolas', monospace;
+            
+            /* Размер шрифта как на ПК */
+            font-size: 13px; 
+            line-height: 1.3;
+            
+            /* Отключаем все "улучшайзеры" текста в браузерах */
             font-variant-ligatures: none;
-            white-space: pre; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            
+            /* Строгое сохранение пробелов */
+            white-space: pre;
+            tab-size: 4;
         }
     </style>
 </head>

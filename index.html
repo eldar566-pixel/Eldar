@@ -10,27 +10,25 @@
             padding: 0;
             box-sizing: border-box;
         }
+        html {
+            background-color: #0d1117; /* Фон на уровне html, чтобы не было белых полос при скролле */
+        }
         body, pre {
             background-color: #0d1117;
             color: #e6edf3;
             font-family: 'Consolas', 'Courier New', monospace;
-            font-size: 14px;
+            font-size: 14px; /* Фиксированный размер */
             line-height: 1.4;
         }
         body {
             padding: 20px;
+            /* Позволяет контенту растягивать страницу вширь */
+            width: fit-content; 
+            min-width: 100%;
         }
         pre {
             white-space: pre;
-            overflow-x: auto;
-        }
-        @media (max-width: 768px) {
-            body, pre {
-                font-size: 10px;
-            }
-            body {
-                padding: 8px;
-            }
+            /* Убрали overflow, чтобы скроллилась вся страница, а не контейнер */
         }
     </style>
 </head>
@@ -24133,5 +24131,6 @@ POOLING:
 Этот путь продолжается.
 
 ===============================================================================</pre>
+</pre>
 </body>
 </html>

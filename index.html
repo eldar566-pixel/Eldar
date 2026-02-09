@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200"> 
+    
     <title>Математический Атлас</title>
     <style>
         * {
@@ -10,25 +11,31 @@
             padding: 0;
             box-sizing: border-box;
         }
-        html {
-            background-color: #0d1117; /* Фон на уровне html, чтобы не было белых полос при скролле */
-        }
+        
         body, pre {
             background-color: #0d1117;
             color: #e6edf3;
-            font-family: 'Consolas', 'Courier New', monospace;
-            font-size: 14px; /* Фиксированный размер */
+            /* ИЗМЕНЕНИЕ 2: Более точный стек шрифтов для iOS и Android */
+            font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
             line-height: 1.4;
+            
+            /* ИЗМЕНЕНИЕ 3: Запрещаем браузеру менять размер текста автоматически */
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            text-size-adjust: none;
         }
+
         body {
             padding: 20px;
-            /* Позволяет контенту растягивать страницу вширь */
-            width: fit-content; 
-            min-width: 100%;
+            /* Гарантируем, что фон не обрежется справа */
+            min-width: 1200px; 
         }
+
         pre {
-            white-space: pre;
-            /* Убрали overflow, чтобы скроллилась вся страница, а не контейнер */
+            /* Убеждаемся, что символы точно встают в сетку */
+            font-variant-ligatures: none;
+            white-space: pre; 
         }
     </style>
 </head>
